@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class Vehicle : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   [SerializeField] private int wheels = 4; // saves the number of the vehicle's wheels 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private string name = car; 
+
+
+
 }

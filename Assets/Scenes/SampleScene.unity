@@ -249,6 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13b37c79690306e44bef08a7bf80759a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wheels: 2
 --- !u!4 &486821836
 Transform:
   m_ObjectHideFlags: 0
@@ -257,7 +258,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486821834}
   m_LocalRotation: {x: -0.016511632, y: -0.0055950647, z: -0.032961387, w: 0.9993046}
-  m_LocalPosition: {x: -2.93, y: 0.11282289, z: -5.77}
+  m_LocalPosition: {x: -0.79, y: 0.11282289, z: -5.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -847,7 +848,6 @@ GameObject:
   - component: {fileID: 995966543}
   - component: {fileID: 995966542}
   - component: {fileID: 995966541}
-  - component: {fileID: 995966540}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -870,22 +870,6 @@ Transform:
   m_Father: {fileID: 1377871688}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &995966540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 995966538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 720a52f206f1fc54198055eb2bce735d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerAge: 33
-  playerSpeed: 3.125
-  playerName: Eli Caparros
-  gameOver: 0
 --- !u!65 &995966541
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1172,6 +1156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13b37c79690306e44bef08a7bf80759a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wheels: 4
 --- !u!4 &1377871688
 Transform:
   m_ObjectHideFlags: 0
@@ -1204,7 +1189,7 @@ GameObject:
   - component: {fileID: 1383249242}
   - component: {fileID: 1383249241}
   m_Layer: 0
-  m_Name: coche
+  m_Name: car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1222,6 +1207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13b37c79690306e44bef08a7bf80759a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wheels: 4
 --- !u!4 &1383249242
 Transform:
   m_ObjectHideFlags: 0
@@ -1230,7 +1216,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383249240}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.261, y: 2.0738, z: 6.64}
+  m_LocalPosition: {x: -14.62, y: 2.0738, z: 6.64}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.6276}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1437,6 +1423,122 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527007558}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1570946672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1570946677}
+  - component: {fileID: 1570946676}
+  - component: {fileID: 1570946675}
+  - component: {fileID: 1570946674}
+  - component: {fileID: 1570946673}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1570946673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570946672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720a52f206f1fc54198055eb2bce735d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAge: 33
+  playerSpeed: 3.125
+  playerName: Eli Caparros
+  gameOver: 0
+  message: Hola mundo
+  points: 256
+--- !u!65 &1570946674
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570946672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1570946675
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570946672}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1570946676
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570946672}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1570946677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570946672}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.7782297, y: 0.8526424, z: -16.29}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1599266707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,7 +1842,6 @@ GameObject:
   - component: {fileID: 1749062006}
   - component: {fileID: 1749062005}
   - component: {fileID: 1749062004}
-  - component: {fileID: 1749062003}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1748,22 +1849,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1749062003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1749062002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 720a52f206f1fc54198055eb2bce735d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerAge: 18
-  playerSpeed: 7.5
-  playerName: Eli Caparros
-  gameOver: 0
 --- !u!65 &1749062004
 BoxCollider:
   m_ObjectHideFlags: 0
