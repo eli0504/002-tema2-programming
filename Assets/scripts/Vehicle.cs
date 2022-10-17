@@ -6,7 +6,13 @@ public class Vehicle : MonoBehaviour
 {
    [SerializeField] private int wheels = 4; // saves the number of the vehicle's wheels 
 
-    [SerializeField] private string name = car; 
+    [SerializeField] private string name = "car";
+
+    private void Start()
+    {
+        Debug.Log ($"{name} tiene {wheels} ruedas"); 
+
+    }
 
 
 

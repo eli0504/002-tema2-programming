@@ -25,7 +25,11 @@ public class MyFirtsScript : MonoBehaviour
 
         Debug.Log(string.Format("Tengo {0} puntos", points));
         Debug.Log(string.Format("Hola {0}, tienes {1} puntos", playerName, points)); 
+
+
     }
+
+
 }
 
 
