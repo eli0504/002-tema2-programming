@@ -1191,6 +1191,7 @@ GameObject:
   - component: {fileID: 1383249242}
   - component: {fileID: 1383249241}
   - component: {fileID: 1383249243}
+  - component: {fileID: 1383249244}
   m_Layer: 0
   m_Name: car
   m_TagString: Untagged
@@ -1239,13 +1240,31 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383249240}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e0e0d18317d6264c912caecf6ed5cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   x: 7
   y: 4
+--- !u!114 &1383249244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383249240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc1c30c499c0f3c42a0b64025664d321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 10
+  y: 4
+  name1: Eustaquio
+  name2: Celedonio
+  z: 2
+  a: 0.5
 --- !u!1 &1471079631
 GameObject:
   m_ObjectHideFlags: 0
