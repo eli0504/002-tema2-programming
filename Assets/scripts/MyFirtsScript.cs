@@ -15,7 +15,8 @@ public class MyFirtsScript : MonoBehaviour
     public bool gameOver = false;
     public string message = "Hola mundo";
     public int points = 256;
-
+    public bool isRaining;
+    public int number = 5;
     private void Start()
     {
         Debug.Log(message);
@@ -24,10 +25,22 @@ public class MyFirtsScript : MonoBehaviour
      
 
         Debug.Log(string.Format("Tengo {0} puntos", points));
-        Debug.Log(string.Format("Hola {0}, tienes {1} puntos", playerName, points)); 
+        Debug.Log(string.Format("Hola {0}, tienes {1} puntos", playerName, points));
+
+        if (isRaining == true)
+        {
+            Debug.Log("Recuerda coger el paraguas");
+        }
 
 
-    }
+        if (number > 0)
+        {
+            Debug.Log($"El numero {number} es positivo");
+        }
+        else
+        {
+            Debug.Log("El número {number} es negativo o cero");        }
+        }
 
 
 }

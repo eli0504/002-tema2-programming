@@ -244,13 +244,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486821834}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13b37c79690306e44bef08a7bf80759a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wheels: 2
   name: moto
+  isOn: 0
+  sound: 
 --- !u!4 &486821836
 Transform:
   m_ObjectHideFlags: 0
@@ -1152,13 +1154,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377871686}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13b37c79690306e44bef08a7bf80759a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wheels: 4
   name: bus
+  isOn: 1
+  sound: pipi
 --- !u!4 &1377871688
 Transform:
   m_ObjectHideFlags: 0
@@ -1192,6 +1196,8 @@ GameObject:
   - component: {fileID: 1383249241}
   - component: {fileID: 1383249243}
   - component: {fileID: 1383249244}
+  - component: {fileID: 1383249245}
+  - component: {fileID: 1383249246}
   m_Layer: 0
   m_Name: car
   m_TagString: Untagged
@@ -1213,6 +1219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wheels: 4
   name: car
+  isOn: 0
+  sound: 
 --- !u!4 &1383249242
 Transform:
   m_ObjectHideFlags: 0
@@ -1254,7 +1262,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383249240}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc1c30c499c0f3c42a0b64025664d321, type: 3}
   m_Name: 
@@ -1265,6 +1273,42 @@ MonoBehaviour:
   name2: Celedonio
   z: 2
   a: 0.5
+--- !u!114 &1383249245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383249240}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720a52f206f1fc54198055eb2bce735d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAge: 33
+  playerSpeed: 3.125
+  playerName: Eli Caparros
+  gameOver: 0
+  message: Hola mundo
+  points: 256
+  isRaining: 1
+  number: 5
+--- !u!114 &1383249246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383249240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b37c79690306e44bef08a7bf80759a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wheels: 4
+  name: car
+  isOn: 1
+  sound: Brum brum
 --- !u!1 &1471079631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,6 +1542,8 @@ MonoBehaviour:
   gameOver: 0
   message: Hola mundo
   points: 256
+  isRaining: 0
+  number: 5
 --- !u!65 &1570946674
 BoxCollider:
   m_ObjectHideFlags: 0
