@@ -252,6 +252,7 @@ MonoBehaviour:
   wheels: 2
   name: moto
   isOn: 0
+  gasoline: 33.9
   sound: 
 --- !u!4 &486821836
 Transform:
@@ -734,8 +735,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0.047493335, y: 0.9330917, z: -0.13416646, w: -0.3302782}
+  m_LocalPosition: {x: 16.600985, y: 5.458424, z: 9.689487}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1162,7 +1163,8 @@ MonoBehaviour:
   wheels: 4
   name: bus
   isOn: 1
-  sound: pipi
+  gasoline: 49.75
+  sound: 
 --- !u!4 &1377871688
 Transform:
   m_ObjectHideFlags: 0
@@ -1220,6 +1222,7 @@ MonoBehaviour:
   wheels: 4
   name: car
   isOn: 0
+  gasoline: 0
   sound: 
 --- !u!4 &1383249242
 Transform:
@@ -1293,6 +1296,7 @@ MonoBehaviour:
   points: 256
   isRaining: 1
   number: 5
+  initialPos: {x: 1, y: 1, z: 1}
 --- !u!114 &1383249246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1308,6 +1312,7 @@ MonoBehaviour:
   wheels: 4
   name: car
   isOn: 1
+  gasoline: 8.25
   sound: Brum brum
 --- !u!1 &1471079631
 GameObject:
@@ -1544,6 +1549,7 @@ MonoBehaviour:
   points: 256
   isRaining: 0
   number: 5
+  initialPos: {x: 1, y: 1, z: 1}
 --- !u!65 &1570946674
 BoxCollider:
   m_ObjectHideFlags: 0

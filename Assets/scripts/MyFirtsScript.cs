@@ -17,15 +17,21 @@ public class MyFirtsScript : MonoBehaviour
     public int points = 256;
     public bool isRaining;
     public int number = 5;
+
+    public Vector3 initialPos = new Vector3(1, 1, 1); //posicion objeto
+
     private void Start()
     {
         Debug.Log(message);
         Debug.Log(points);
         Debug.Log($"Tengo {points} puntos");
-     
+
 
         Debug.Log(string.Format("Tengo {0} puntos", points));
         Debug.Log(string.Format("Hola {0}, tienes {1} puntos", playerName, points));
+
+        Debug.Log(transform.position);
+
 
         if (isRaining == true)
         {
@@ -39,11 +45,20 @@ public class MyFirtsScript : MonoBehaviour
         }
         else
         {
-            Debug.Log("El número {number} es negativo o cero");        }
+            Debug.Log("El número {number} es negativo o cero"); }
+
+
+
+        transform.position = initialPos;
+    }
         }
 
 
-}
+
+
+        
+
+
 
 
   
