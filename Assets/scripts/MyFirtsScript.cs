@@ -8,7 +8,6 @@ public class MyFirtsScript : MonoBehaviour
      4 variables with the player information 
     */
 
-    // This variable saves the player's ages
     public int playerAge = 33;
     public float playerSpeed = 3.125f;
     public string playerName = "Eli Caparros";
@@ -17,7 +16,7 @@ public class MyFirtsScript : MonoBehaviour
     public int points = 256;
     public bool isRaining;
     public int number = 5;
-
+    public bool canGetBigger = true;
     public Vector3 initialPos = new Vector3(1, 1, 1); //posicion objeto
 
     private void Start()
@@ -51,7 +50,26 @@ public class MyFirtsScript : MonoBehaviour
 
         transform.position = initialPos;
     }
+
+    private void Update()    //fuera del Start y se ejecuta constantemente
+    {
+        if (Input.GetMouseButtonDown(0))  //cada vez que de click, el cubo sube (vector.up)
+        {
+            transform.position += Vector3.up;
         }
+
+        if (canGetBigger == true)  //es verdad que puede hacerse mas grande
+        {
+           if (Input.GetMouseButtonDown (0)) {
+                transform.localScale += Vector3.one;  // este tipo de vector aumenta en todas las escalas (vector.one)
+            }
+        }
+
+       
+     
+
+    }
+}
 
 
 
